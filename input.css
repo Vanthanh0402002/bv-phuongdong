@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ct = custom */
+.ct-topmenu-expanded{
+    @apply absolute top-16 z-50 w-full text-center bg-white;
+}
+
+.ct-top-menu-item {
+    @apply pl-2 xl:ml-3 text-xs xl:text-base hover:text-green-600 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-green-600 after:lg:h-0.5 after:lg:w-0
+     hover:after:lg:w-[30%] hover:after:flex hover:after:h-1 hover:after:rounded-sm hover:after:mx-[35%]  py-3;
+}
+.ct-top-menu-item-active{
+    @apply text-green-600  relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-green-600
+    after:lg:w-[30%]  after:flex after:h-1 after:rounded-sm after:mx-[35%] py-3;
+}
+
